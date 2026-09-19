@@ -50,25 +50,19 @@ nav a:hover{
 }
 
 ul.galerie li a img{
-/* float:left; */
 width:100px
 }
 ul.galerie li a:hover img{
-/* grossissement */
 transform: scale(1.5) rotate(-10deg);
-/* ombre */
 box-shadow: 4px 4px 10px rgba(0,0,0,0.5);
 }
 
 ul.galerie li a img{
-/* transition */
 transition: transform 0.2s ease-in-out;
 }
 
 #diaporama{
     padding: 40px;
-    /* border:1px solid #CCC; */
-    /* margin:70px auto 0px auto; */
     overflow: hidden;
 }
 #diaporama .slider{ 
@@ -99,9 +93,7 @@ from,11%, to {margin-left:-140px;} 15%,26%{margin-left:-280px;}
 
 section aside{
     width: 300px;
-    /* height: 50px; */
     margin-right: 50px;
-    /* padding-right: 5px; */
     box-sizing: border-box;
     overflow: hidden;
 }
@@ -110,8 +102,6 @@ aside img{
 }
 .content{
     display: flex;
-    /* background-color: #3f16af; */
-    /* justify-content: space-around; */
 }
 .content section{
     width: 500px;
@@ -130,10 +120,7 @@ aside img{
     right: 70px;
     width: 300px;
 }
-    /* #wrap{
-    width:80px;
-    margin-right:10px;
-    } */
+   
 #transformation{
 float:right;
 margin:10px;
@@ -160,7 +147,6 @@ box-shadow:8px 8px 8px rgba(0,0,0,0.5);
     display: flex;
     /* align-items: center; */
     text-align: center;
-
     background-size: cover;
     background-position: center;
 }
@@ -177,6 +163,10 @@ box-shadow:8px 8px 8px rgba(0,0,0,0.5);
     position: relative;
     top: 150px;
     font-weight:900;
+}
+.categorie1:hover, .categorie2:hover,.categorie3:hover{
+    cursor: pointer;
+    border: 2px solid var(--gold);
 }
 footer{
     background-color: #3d3d3d10;
@@ -503,15 +493,21 @@ footer p {
 /* CONTENU */
 
 .contact-container {
-    display: grid;
+    display: flex;
+    justify-content: center;
     grid-template-columns: 1fr 1.5fr;
     gap: 60px;
     max-width: 1000px;
     background-color: var(--forest);
-    margin-left: 90px;
-    padding-left: 400px;
+    margin-left: 95px;
+    border-radius: 20px;
+    /* padding: px; */
 }
 
+.contact{
+    /* margin-left: 90px; */
+    text-align: center;
+}
 
 /* INFORMATIONS */
 
@@ -519,6 +515,7 @@ footer p {
     background: #183A2A;
     color: white;
     padding: 40px;
+    border-radius: 25%;
 }
 
 .contact-info h2 {
@@ -541,6 +538,7 @@ footer p {
 .contact-form {
     display: flex;
     flex-direction: column;
+    padding: 10px;
 }
 
 .contact-form label {
@@ -575,4 +573,8 @@ footer p {
 
 .contact-form button:hover {
     background: #b88e20;
+}
+
+.contact{
+    margin-bottom: 20px;
 }
